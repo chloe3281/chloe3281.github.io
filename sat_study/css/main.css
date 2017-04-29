@@ -1,0 +1,65 @@
+/*초기화
+브라우저마다 기본 스타일이 다를 수 있음
+글꼴, 글자사이즈, 행간, 색상은 정하고 시작
+폼태그는 글자와 관련된ㄷ css는 상속받지 않음
+*/
+*{margin:0;padding:0;}
+
+
+
+/*기본클래스 정의 */
+
+.skip{width:1px; height:1px; padding:0; border:0;margin:-1px;overflow:hidden;position: absolute; clip: rect(0 0 0 0);}
+
+li{list-style: none;}
+a{text-decoration: none;}/*inherit부모의 값을 상속*/
+h1{line-height:1.1;}
+img{vertical-align:top;}
+img,fieldset{border:0;}
+
+
+
+/************************************************ 실습 css ********************************/
+.ex3_body{font-size:5px;}
+h1{text-align:center;}      
+.explanation{
+  font-size:20px;
+  color:gray;
+  margin-bottom:20px;
+}
+img.first_img{width:80%;margin:auto;display:block;max-width:500px;}
+
+
+ /*p{text-align:center;}*/
+p.font20{font-size:20px; font-weight:600;}
+p.rem2{font-size:2rem;}
+p.em2{font-size:1.5em;}
+p.tel:before{content: "\f02c";
+    padding-right: 10px;
+     
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+div{width:100%;}
+div.first{background-color:deepskyblue; height:500px;display:block;}
+div.second{background-color:yellow;height:300px;display:block;}
+div.third{background-color:deepskyblue;padding-top:50px;padding-bottom:100px;text-align:center;}
+div.third_first,.third_second,.third_third{display:inline-block; width:300px; height:300px;background-color:gray;margin-left:10px;margin-bottom:20px;margin-top:10px;}
+
+a.first_link::before {
+    content: '';
+    display: block;
+    padding-bottom: 10px;
+}
+a.first_link::after {
+    content: '';
+    display: block;
+    padding-bottom: 30px;
+}
+div.first{width:300px; height:300px; background-color:gray;
+         display:inline-block;
+}

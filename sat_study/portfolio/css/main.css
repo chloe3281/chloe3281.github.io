@@ -1,0 +1,110 @@
+body {
+    font-family: 'Nanum Gothic'
+}
+
+.navbar {
+    margin-bottom: 0;
+    background: #fff;
+    position: fixed;
+    height: 52px;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar-default .navbar-brand {
+    color: #606061;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 27px;
+    /* letter-spacing: 0px; */
+}
+
+.bgimg {
+    background: url(../img/bg_1.jpg)top center fixed;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bgimg .container h1,
+.bgimg .container p,
+.bgimg .container a {
+    text-align: center;
+}
+
+.bgimg h1 {
+    font-size: 60px;
+    padding-top: 84px;
+}
+
+.bgimg h1,
+.bgimg p {
+    color: #fff;
+}
+
+.bgimg p {
+    font-size: 16px;
+}
+
+.text-position {
+    position: relative;
+    top: 20%;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.section-heading:after {
+    content:'';
+    display:block;
+    height:20px;
+}
+
+.thumimg {
+    width:200px;
+    height:200px;
+    
+}
+
+h4.title {
+    font-size:22px;
+}
+
+.extra-padding{max-width:800px;padding-top:50px;padding-bottom:50px;}
+
+img.thumimg1 {
+    width:100%;
+}
+
+
+
+.background-black {
+    background-color:#000;
+    opacity:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+    transition:0.5s;
+}
+.background-black:hover {
+  
+    opacity:0.5;
+    cursor: pointer;
+   
+}
+
+.product {
+    position:relative;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.ahhh {
+    text-align:center;
+    color:white;
+    font-size:22px;
+    position:relative;
+    top:40%;
+}
