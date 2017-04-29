@@ -231,18 +231,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).read(function() {
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html,body').({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-                        window.location.hash = hash;
-                    });
-                }
+        var $root = $('html, body');
+        $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function() {
+                window.location.hash = href;
             });
+            return false;
         });
 
     </script>
